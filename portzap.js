@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // portzap.js
-import inquirer from 'inquirer';
-import { exec } from 'child_process';
-import util from 'util';
-import Table from 'cli-table3';
+const inquirer = require('inquirer');
+const { exec } = require('child_process');
+const util = require('util');
+const Table = require('cli-table3');
 
 const execPromise = util.promisify(exec);
 

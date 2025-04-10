@@ -4,7 +4,6 @@
   "description": "Command-line tool to release ports",
   "main": "index.js",
   "bin": "portzap.js",
-  "type": "module",
   "pkg": {
     "scripts": ["portzap.js"],
     "targets": [
@@ -12,7 +11,7 @@
       "node16-macos-x64",
       "node16-win-x64"
     ],
-    "outputPath": "bin"
+    "outputPath": "dist"
   },
   "scripts": {
     "start": "node portzap.js",
@@ -39,7 +38,7 @@
   "homepage": "https://github.com/pablo-medina/portzapper#readme",
   "dependencies": {
     "cli-table3": "0.6.3",
-    "inquirer": "8.2.6"
+    "inquirer": "7.3.3"
   },
   "devDependencies": {
     "pkg": "5.8.1"
