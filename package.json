@@ -1,0 +1,47 @@
+{
+  "name": "portzapper",
+  "version": "1.0.0",
+  "description": "Command-line tool to release ports",
+  "main": "index.js",
+  "bin": "portzap.js",
+  "type": "module",
+  "pkg": {
+    "scripts": ["portzap.js"],
+    "targets": [
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"
+    ],
+    "outputPath": "bin"
+  },
+  "scripts": {
+    "start": "node portzap.js",
+    "build": "pkg ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablo-medina/portzapper.git"
+  },
+  "keywords": [
+    "port",
+    "zapper",
+    "release",
+    "free",
+    "application",
+    "command-line",
+    "tool"
+  ],
+  "author": "Pablo Medina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pablo-medina/portzapper/issues"
+  },
+  "homepage": "https://github.com/pablo-medina/portzapper#readme",
+  "dependencies": {
+    "cli-table3": "0.6.3",
+    "inquirer": "8.2.6"
+  },
+  "devDependencies": {
+    "pkg": "5.8.1"
+  }
+}
